@@ -1,0 +1,207 @@
+﻿@inherits LayoutComponentBase
+
+
+<div class="min-h-screen min-h-screen px-10 py-10" >
+   
+    <div class=" w-full rounded-3xl shadow-2xl py-20 px-10 md:px-10 bg-blue-800">
+        <div class="text-center text-5xl text-white">FACTURA</div>
+        <div class="m-4 w-full bg-white bg-opacity-75 rounded-2xl px-16 py-16">
+            <span class="flex shadow-md mb-5 text-xs">
+                <span class="bg-orange-200 w-28 font-bold text-center text-gray-800 p-3 px-5 rounded-l">Folio</span><input class="field text-sm text-gray-600  pr-20 rounded-r w-full " type="text" placeholder="Folio">
+                <span class="bg-orange-200 w-28 font-bold text-center text-gray-800 p-3 px-5 rounded-l">Uso cfdi</span><CfdiComponent></CfdiComponent>
+                <span class="bg-orange-200 w-28 font-bold text-center text-gray-800 p-3 px-5 rounded-l">Serie</span><input class="field text-sm text-gray-600 p-2 px-3 rounded-r w-full" type="text" placeholder="Serie">
+                <span class="bg-orange-200 w-28 font-bold text-center text-gray-800 p-3 px-5 rounded-l">Tipo</span><input class="field text-sm text-gray-600 p-2 px-3 rounded-r w-full" type="text" placeholder="Tipo">
+            </span>
+            <span class="flex shadow-md mb-5 text-xs">
+                <span class="bg-orange-200 w-28 font-bold text-center text-gray-800 p-3 px-5 rounded-l">Cliente</span><input class="field text-sm text-gray-600  pr-20 rounded-r w-full" type="text" placeholder="Cliente">
+                <span class="bg-orange-200 w-28 font-bold text-center text-gray-800 p-3 px-5 rounded-l">Moneda</span><MonedaComponent></MonedaComponent>
+            </span>
+            <span class="flex shadow-md mb-5 text-xs">
+                <span class="bg-orange-200 w-28 font-bold text-center text-gray-800 p-3 px-5 rounded-l w-1/3">Domicilio fiscal</span><input class="field text-sm text-gray-600  pr-20 rounded-r w-full" type="text" placeholder="Domicilio Fiscal">
+                <span class="bg-orange-200 w-28 font-bold text-center text-gray-800 p-3 px-5 rounded-l w-1/4">Fecha</span><input class="field text-sm text-gray-600 p-2 px-3 rounded-r w-1/4" type="text" placeholder="Fecha">
+            </span>
+            <span class="flex shadow-md mb-5 text-xs">
+                <span class="bg-orange-200 w-28 font-bold text-center text-gray-800 p-3 px-5 rounded-l w-1/3">Metodo de pago</span><input class="field text-sm text-gray-600  pr-20 rounded-r w-full" type="text" placeholder="Metodo de pago">
+                <span class="bg-orange-200 w-28 font-bold text-center text-gray-800 p-3 px-5 rounded-l ">Forma cobro</span><FormaDePagoComponent></FormaDePagoComponent>
+            </span>
+            <div class="content-center">
+                <input class="field text-sm text-gray-600  pr-20 p-3 px-5 rounded-l rounded-r" type="text" placeholder="Buscar articulo">
+                <button class="p-2 my-2 bg-orange-200 text-gray-700 rounded-md focus:outline-none focus:ring-2 ring-blue-300 ring-offset-2">Agregar articulo</button>
+            </div>
+
+
+        </div>
+        <div class="m-4 w-full rounded-3xl shadow-2xl py-20 px-10 md:px-10 bg-white opacity-75">
+            <table class="min-w-full divide-y divide-gray-200 overflow-scroll">
+                <thead class="bg-orange-200 opacity-100">
+                    <tr>
+                        <th scope="col" class=" bg-orange-200 px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Articulo
+                        </th>
+                        <th scope="col" class="bg-orange-200 px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Nombre
+                        </th>
+                        <th scope="col" class="bg-orange-200 px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            UM
+                        </th>
+                        <th scope="col" class="bg-orange-200 px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Unidades
+                        </th>
+                        <th scope="col" class="bg-orange-200 px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Precio
+                        </th>
+                        <th scope="col" class="bg-orange-200 px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Descuento
+                        </th>
+                        <th scope="col" class="bg-orange-200 px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Importe
+                        </th>
+                        <th scope="col" class="relative px-6 py-3">
+                            <span class="sr-only">Edit</span>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white divide-y divide-gray-200">
+                    <tr>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            art23
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            sabritas
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap">
+                            gramos
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                            10
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                            13
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                            5
+                        </td>
+                        <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                            123.5
+                        </td>
+                    </tr>
+
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+       
+</div>
+
+<!--<div class="min-w-screen min-h-screen  flex items-start justify-center px-10 py-10">
+    <div class=" text-gray-500 rounded-3xl shadow-2xl w-full overflow-hidden" style="max-width:1000px">
+        <div class="md:flex w-full bg-gray-300">
+            <div class="w-full py-20 px-10 md:px-10">
+                <div class="md\:bg-gray-400 text-gray-500 rounded-3xl shadow-2xl w-full bg-light overflow-hidden pb-0" >
+                    <div class="md:flex w-full">
+                        <div class="w-full py-20 px-10 md:px-10">
+                            <span class="flex shadow-md mb-5 text-xs">
+                                <span class="bg-indigo-100 w-28 font-bold text-center text-gray-800 p-3 px-5 rounded-l">Folio</span><input class="field text-sm text-gray-600  pr-20 rounded-r w-full " type="text" placeholder="Folio">
+                                <span class="bg-indigo-100 w-28 font-bold text-center text-gray-800 p-3 px-5 rounded-l">Serie</span><input class="field text-sm text-gray-600 p-2 px-3 rounded-r w-full" type="text" placeholder="Serie">
+                                <span class="bg-indigo-100 w-28 font-bold text-center text-gray-800 p-3 px-5 rounded-l">Tipo</span><input class="field text-sm text-gray-600 p-2 px-3 rounded-r w-full" type="text" placeholder="Tipo">
+                            </span>
+                            <span class="flex shadow-md mb-5 text-xs">
+                                <span class="bg-indigo-100 w-28 font-bold text-center text-gray-800 p-3 px-5 rounded-l">Cliente</span><input class="field text-sm text-gray-600  pr-20 rounded-r w-full" type="text" placeholder="Cliente">
+                                <span class="bg-indigo-100 w-28 font-bold text-center text-gray-800 p-3 px-5 rounded-l">Moneda</span><input class="field text-sm text-gray-600 p-2 px-3 rounded-r w-1/4" type="text" placeholder="Moneda">
+                            </span>
+                            <span class="flex shadow-md mb-5 text-xs">
+                                <span class="bg-indigo-100 w-28 font-bold text-center text-gray-800 p-3 px-5 rounded-l w-1/3">Domicilio fiscal</span><input class="field text-sm text-gray-600  pr-20 rounded-r w-full" type="text" placeholder="Domicilio Fiscal">
+                                <span class="bg-indigo-100 w-28 font-bold text-center text-gray-800 p-3 px-5 rounded-l w-1/4">Fecha</span><input class="field text-sm text-gray-600 p-2 px-3 rounded-r w-1/4" type="text" placeholder="Fecha">
+                            </span>
+                            <span class="flex shadow-md mb-5 text-xs">
+                                <span class="bg-indigo-100 w-28 font-bold text-center text-gray-800 p-3 px-5 rounded-l w-1/3">Metodo de pago</span><input class="field text-sm text-gray-600  pr-20 rounded-r w-full" type="text" placeholder="Metodo de pago">
+                                <span class="bg-indigo-100 w-28 font-bold text-center text-gray-800 p-3 px-5 rounded-l w-1/3">Forma cobro</span><input class="field text-sm text-gray-600 p-2 px-3 rounded-r " type="text" placeholder="Forma de cobro">
+                            </span>
+                            <div class="p-8">
+                                <div class="bg-white flex items-center rounded-full shadow-xl">
+                                    <input class="rounded-l-full w-full py-4 px-6 text-gray-700 leading-tight focus:outline-none" id="search" type="text" placeholder="Search">
+
+                                    <div class="pb-0">
+                                        <button class="bg-blue-500 text-white rounded-full p-2 hover:bg-blue-400 focus:outline-none w-12 h-12 flex items-center justify-center">
+                                            icon
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md\:bg-gray-400 text-gray-500 rounded-3xl bg-light shadow-2xl w-full overflow-hidden" style="max-width:1000px">
+                        <div class="md:flex w-full">
+                            <div class="w-full py-20 px-10 md:px-10">
+                                <table class="min-w-full divide-y divide-gray-200">
+                                    <thead class="bg-gray-50">
+                                        <tr>
+                                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                Articulo
+                                            </th>
+                                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                Nombre
+                                            </th>
+                                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                UM
+                                            </th>
+                                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                Unidades
+                                            </th>
+                                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                Precio
+                                            </th>
+                                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                Descuento
+                                            </th>
+                                            <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                                                Importe
+                                            </th>
+                                            <th scope="col" class="relative px-6 py-3">
+                                                <span class="sr-only">Edit</span>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody class="bg-white divide-y divide-gray-200">
+                                        <tr>
+                                            <td class="px-6 py-4 whitespace-nowrap">
+                                                art23
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-nowrap">
+                                                sabritas
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-nowrap">
+                                                gramos
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                                10
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                                13
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                                5
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
+                                                123.5
+                                            </td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                </div>
+            </div>
+    -->
+
+<div class="content mt-3">
+    @Body
+</div>
+

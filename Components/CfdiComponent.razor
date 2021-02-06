@@ -1,0 +1,8 @@
+﻿@inherits Base.CfdiComponentBase
+<select class="pr-20  overflow-hidden">
+    <option></option>
+    @foreach (var item in cfdiItems)
+    {
+        <option>@item.Descripcion</option>
+    }
+</select>

@@ -1,0 +1,8 @@
+﻿@inherits Base.MonedaComponentBase
+<select class="pr-20 overflow-hidden"> 
+    <option></option>
+    @foreach(var item in monedaItems)
+    {
+        <option>@item.Abrev</option>
+    }
+</select>

@@ -1,0 +1,8 @@
+﻿@inherits Base.FormaDePagoComponentBase
+<select class="pr-20  overflow-hidden">
+    <option></option>
+    @foreach (var item in formaDePagoItems)
+    {
+        <option>@item.Descripcion</option>
+    }
+</select>
